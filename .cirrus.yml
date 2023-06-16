@@ -1,0 +1,27 @@
+env:
+  # Telegram
+  TG_CHAT: -1001885973208
+  TG_TOKEN: ENCRYPTED[eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJwcm90byI6IkNoY0tDbEpsY0c5emFYUnZjbmtRZ0lDdzFQYkxod29ZQWc9PSIsImlzcyI6ImNpcnJ1cyIsIm93bmVyVWlkIjoiMTAyMzU5MTA3IiwiZXhwIjo5MjIzMzcyMDM2ODU0Nzc1LCJwbGF0Zm9ybSI6ImdpdGh1YiJ9.fTSD1YJjC4D61EdLZ7ysuF_PncAPQ7_8mGH3vDyvpT_cTZ1ArHXDr-vrQyJ3g-bAguAaMBjJkkAZ7lzDKiAf1A]
+
+task:
+  name: "KERNEL BUILD CI by TheUnknownName06"
+  skip: $CIRRUS_BRANCH == 'main'
+
+  timeout_in: 120m
+  container:
+      image: ubuntu
+      privileged: true
+      cpu: 8
+      memory: 10G
+      
+  setup_script:
+      - apt update
+      - apt upgrade -y
+      - apt install wget git -y
+      - wget https://raw.githubusercontent.com/TheUnknownName/toolFW/main/setup.sh
+      - bash setup.sh
+
+  build_script:
+      - wget https://raw.githubusercontent.com/TheUnknownName/Kernel-CI/main/build.sh
+      - chmod +x build.sh
+      - ./build.sh ${CIRRUS_WORKING_DIR}/name-kernel.txt
