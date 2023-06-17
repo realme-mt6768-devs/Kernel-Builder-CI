@@ -1,14 +1,14 @@
 #INFORMATION KERNEL
 link_kernel=https://github.com/Rem01Gaming/liquid_kernel_realme_even
 name_zip=Liquid-316-slmk
-local_version=-VivizX-Custom✴
-kbuild_user=ismasrull
-kbuild_host=Kamu Nanya
+local_version=-liquidfy
+kbuild_user=Remu
+kbuild_host=Chan
 device_name=<b>realme C25/C25s</b> (even)
-vendor_name=even
+vendor_name=RUI2
 
 #OPTION FOR COMPILER
-defconfig_name=even_defconfig
+defconfig_name=even_slmk_defconfig
   #just for incase for slmk
 defconfig_flag=-Wunused-variable
 
@@ -20,4 +20,4 @@ link_anykernel=https://github.com/TheUnknownName/AnyKernel3.git -b even-liq
 
 
 #OUTPUT RESULT
-tg_chat=-1001857624835
+tg_chat=-1001885973208

@@ -4,7 +4,7 @@ TANGGAL=$(date +"%F-%S")
 START=$(date +"%s")
 KERNEL_DIR=$(pwd)
 NAME_KERNEL_FILE="$1"
-chat_id="$TG_CHAT"
+chat_id="$(grep tg_chat $NAME_KERNEL_FILE | cut -f2 -d"=" )"
 token="6118183207:AAEr_wwQkj1qGLTfeBYcLP9C1bBlgJ3xDwc"
 
 #INFROMATION NAME KERNEL
@@ -129,13 +129,13 @@ compile() {
   make O=out ARCH=arm64 $DEFCONFIG_NAME
 
   PATH="${PWD}/clang/bin:${PATH}:${PWD}/aarch32-gcc/bin:${PATH}:${PWD}/aarch64-gcc/bin:${PATH}" \
-make -o3 -j$(nproc all) O=out \
-                      ARCH=arm64 \
-                      CC="clang" \
-                      CLANG_TRIPLE=aarch64-linux-gnu- \
-                      CROSS_COMPILE="${PWD}/aarch64-gcc/bin/aarch64-linux-gnu-" \
-                      CROSS_COMPILE_ARM32="${PWD}/aarch32-gcc/bin/arm-linux-gnueabihf-" \
-                      CONFIG_NO_ERROR_ON_MISMATCH=y \
+  make -j$(nproc --all) O=out \
+    ARCH=arm64 \
+    CC="clang" \
+    CLANG_TRIPLE=aarch64-linux-gnu- \
+    CROSS_COMPILE="${PWD}/aarch64-gcc/bin/aarch64-linux-gnu-" \
+    CROSS_COMPILE_ARM32="${PWD}/aarch32-gcc/bin/arm-linux-gnueabihf-" \
+    CONFIG_NO_ERROR_ON_MISMATCH=y \
     V=0 $DEFCONFIG_FLAG
 
   cp out/arch/arm64/boot/Image.gz-dtb ~/AnyKernel
