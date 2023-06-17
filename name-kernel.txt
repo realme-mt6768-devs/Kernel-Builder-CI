@@ -8,7 +8,7 @@ device_name=<b>realme C25/C25s</b> (even)
 vendor_name=RUI2
 anykernel=https://github.com/TheUnknownName/AnyKernel3.git -b even-liq
 #OPTION FOR COMPILER
-defconfig_name=even_slmk_defconfig
+defconfig_name=physwizz_defconfig
   #just for incase for slmk
 
 
