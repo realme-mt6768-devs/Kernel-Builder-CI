@@ -11,7 +11,7 @@ task:
   container:
       image: ubuntu
       privileged: true
-      cpu: 10
+      cpu: 8
       memory: 10G
       
   setup_script:
