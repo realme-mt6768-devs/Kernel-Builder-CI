@@ -12,7 +12,7 @@ task:
       image: ubuntu
       privileged: true
       cpu: 8
-      memory: 30G
+      memory: 10G
       
   setup_script:
       - apt update
