@@ -7,7 +7,7 @@ kbuild_host=memek
 device_name=<b>realme C25/C25s</b> (even)
 vendor_name=RUI2
 #OPTION FOR COMPILER
-defconfig_name=even_slmk_defconfig
+defconfig_name=physwizz_defconfig
   #just for incase for slmk
 
 
