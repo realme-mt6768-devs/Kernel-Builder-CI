@@ -1,18 +1,18 @@
 #INFORMATION KERNEL
-link_kernel=https://github.com/Rem01Gaming/liquid_kernel_realme_even
-name_zip=Liquid-318-slmk
-local_version=-liquidfy-SLMK✨️
+link_kernel=https://github.com/viviz-kernel-Devices/kernel_realme_even
+name_zip=viviz-kernel
+local_version=-Viviz-Kernel💦
 kbuild_user=ismasrull
 kbuild_host=AndroidTermux
 device_name=<b>realme C25/C25s</b> (even)
 vendor_name=RUI2
 
 #OPTION FOR COMPILER
-defconfig_name=even_slmk_defconfig
+defconfig_name=even_defconfig
   #just for incase for slmk
 
 #INFORMATION LINK COMPILER
 link_gcc_aarch64=https://github.com/EternalX-project/aarch64-linux-gnu.git
 link_gcc_arm=https://github.com/EternalX-project/arm-linux-gnueabi.git
 link_clang=https://github.com/SayuZX/android_prebuilts_clang_host_linux-x86_clang-r437112.git
-link_anykernel=https://github.com/TheUnknownName/AnyKernel3.git -b even-liq
+link_anykernel=https://github.com/osm0sis/AnyKernel3 -b master
