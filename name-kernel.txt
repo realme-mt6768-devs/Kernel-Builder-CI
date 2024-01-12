@@ -3,7 +3,7 @@ link_kernel=https://github.com/cumaRull/realme_C25_C25s_narzo-50A-AndroidT-kerne
 name_zip=Kernel-evenT
 local_version=-EvenT
 kbuild_user=ismasrull
-kbuild_host=memek
+kbuild_host=ismasrull@Cirrus
 device_name=<b>realme C25/C25s</b> (even)
 vendor_name=RUI2
 #OPTION FOR COMPILER
