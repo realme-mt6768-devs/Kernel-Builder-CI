@@ -4,7 +4,7 @@ name_zip=Kernel-evenT
 local_version=-EvenT
 kbuild_user=ismasrull
 kbuild_host=ismasrull@Cirrus
-device_name=<b>realme C25/C25s</b> (even)
+device_name=RMX3191
 vendor_name=RUI4
 #OPTION FOR COMPILER
 defconfig_name=gki_defconfig
