@@ -1,5 +1,5 @@
 #INFORMATION KERNEL
-link_kernel=https://github.com/cumaRull/realme_C25_C25s_narzo-50A-AndroidT-kernel-source
+link_kernel=https://github.com/cumaRull/kernel_even_4.19.git
 name_zip=Kernel-evenT
 local_version=-EvenT
 kbuild_user=ismasrull
@@ -7,7 +7,7 @@ kbuild_host=ismasrull@Cirrus
 device_name=RMX3191
 vendor_name=RUI4
 #OPTION FOR COMPILER
-defconfig_name=gki_defconfig
+defconfig_name=even_defconfig
   #just for incase for slmk
 
 
